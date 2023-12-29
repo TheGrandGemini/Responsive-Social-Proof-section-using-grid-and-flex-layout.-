@@ -1,0 +1,158 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* Mobile Design*/
+
+@media screen and (min-width: 375px){
+    
+
+body{
+    margin: 5% 5%;
+    font-size: 15px;
+    background-image: url(images/bg-pattern-bottom-mobile.svg),url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, top left;
+    background-attachment: scroll;
+   
+   
+}
+
+.heading{
+    color: hsl(300, 43%, 22%);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.note{
+    color:  hsl(303, 10%, 53%) ;
+    font-size:1.4rem ;
+    text-align-last: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.star{
+    text-align: center;
+    border: solid hsl(300, 24%, 96%) 1px;
+    background-color:  hsl(300, 24%, 96%);
+    margin-bottom: 20px;
+    height: fit-content;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 600;
+}
+
+.star p {
+    padding-top: 2px;
+
+}
+
+.star-note{
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+.review{
+    background-color:  hsl(300, 43%, 22%) ;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+
+.reviewer-info img{
+   border-radius: 50% ;
+   float: left;
+   overflow: scroll;
+  
+}
+
+.reviewer-info div{
+   padding-left: 100px;
+}
+
+.reviewers-name{
+    color: hsl(0, 0%, 100%) ;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.verified{
+    color: hsl(333, 80%, 67%);
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.reviewers-note{
+    color:  hsl(0, 0%, 100%);
+    font-size: 20px;
+}
+}
+
+/* Destop Design*/
+
+@media screen and ( min-width:1440px) {
+
+body{
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, right bottom;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:" header star"
+    " review  review";
+    gap: 20px;
+}
+
+.about-section{
+    grid-area: header;
+}
+
+.heading{
+    font-size: 5rem;
+}
+
+.star-section{
+    grid-area: star;
+    position: relative;
+}
+
+.review-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px ;
+    grid-area: review;
+}
+}
+
+
+/* ### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700 */
